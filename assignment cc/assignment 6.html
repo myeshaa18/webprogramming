@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Ruzeynah%20kashif/Desktop/speech/calculator.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<style>
+#calculator{
+width:500px;
+height:
+250px;
+border:2px solid black;
+margin:auto;
+margin-top:100px;
+}
+</style><style type="text/css" id="operaUserStyle"></style></head>
+
+<body>
+<div id="calculator">
+<center>
+<br>
+<label style="margin-top;50px;">Amount</label><br><br>
+<input type="number" placeholder="Enter 
+Amount" oniput="VatConverter(this.value)" onchange="Vatconverter(this.value)">
+
+<p>Vat5% <span id="vat5"></span></p><br>
+<p>Vat10% <span id="vat10"></span></p>
+</center>
+</div>
+<script>
+function VatConverter(valNum) {
+valNum = parsefloat(valNum);
+document.getElementById("vat5").innerHTML = valNum * 0.05;
+document.getElementById("vat10").innerHTML = valNum * 0.1;
+}
+</script>
+
+</body></html>
