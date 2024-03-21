@@ -1,0 +1,35 @@
+#A {
+  border: 2px solid purple;
+  box-shadow: 5px 5px red;
+}
+
+#B {
+  border: 2px solid green;
+  box-shadow: -5px -5px black;
+}
+
+#C {
+  border-width: 4px;
+  border-style: solid;
+  border-color: darkgreen;
+  box-shadow: inset 0 0 0 4px red,
+              inset 0 0 0 8px darkblue,
+              inset 0 0 0 12px lightpink;
+}
+
+#D {
+  border: 2px solid #8B4513; /* Red-brown stroke */
+  filter: blur(2px); /* Blurred text */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensures the content is vertically centered */
+}
+
+div {
+  width: 200px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+  margin: 0 20px; /* Add space between divs */
+}
